@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+# Models
+use app\models\Lancamento;
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -43,4 +46,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Relacionamentos
+
+    public function lancamentos()
+    {
+        return $this->belongsTo(lancamento::class,'id_user','id_user')
+        ->orderBy('dt_faturamento');
+    }
 }

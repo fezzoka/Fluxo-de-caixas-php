@@ -1,0 +1,4 @@
+.bg-nav {
+    --bs-bg-opacity: 1;
+    background-color: #006400,var(--bs-bg-opacity)!important;
+}
