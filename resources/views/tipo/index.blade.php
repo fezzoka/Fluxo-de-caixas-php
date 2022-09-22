@@ -21,9 +21,15 @@
         @foreach ($tipos->get() as $tipo)
         <tr>
             <td>
-                <a href="{{ route('tipo.edit', ['id'=>$tipo->id_tipo]) }}" class="btn btn-sucess">
+                <a href="{{ route('tipo.edit', ['id'=>$tipo->id_tipo]) }}" class="btn btn-primary">
                     Editar
                 </a>
+                <a href="{{ route('tipo.edit', ['id'=>$tipo->id_tipo]) }}" class="btn btn-danger">
+                    Deletar
+                </a>
+               <a href="{{ route('tipo.edit', ['id'=>$tipo->id_tipo]) }}" class="btn btn-primary">
+                    Exibir
+                
             </td>
             <td>{{$tipo->id_tipo}}</td>
             <td>{{$tipo->tipo}}</td>

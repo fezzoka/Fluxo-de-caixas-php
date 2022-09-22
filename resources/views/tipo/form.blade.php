@@ -16,7 +16,7 @@
     <div class="row">
         <div class="form-group col-md-6"
         <label for="tipo">tipo*</label>
-        <input type="text" name="tipo" id="tipo" value="{{$tipo? $tipo->tipo :old(tipo)}}"required class="form-control" >
+        <input type="text" name="tipo" id="tipo" value="{{$tipo? $tipo->tipo :old('tipo')}}"required class="form-control" >
     </div>
     <div class="form-group col-md2">
         <input type="submit" value="{{$tipo?'Atualizar':'Cadastrar'}}"class="btn btn-primary">

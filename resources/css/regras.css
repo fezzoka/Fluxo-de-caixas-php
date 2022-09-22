@@ -1,4 +1,20 @@
-.bg-nav {
-    --bs-bg-opacity: 1;
-    background-color: #006400,var(--bs-bg-opacity)!important;
+.bg-pink
+{
+   
+    background-color: #50775057;    
+ 
+}
+.bg-pink a
+{
+    color:white;
+      
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dark-rai
+{
+    background-color: #475047e8;   
+}
+.rosacor
+{
+    background-color: #db11bae8;  
 }

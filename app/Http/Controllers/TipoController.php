@@ -42,7 +42,7 @@ class TipoController extends Controller
         $tipo = new Tipo();
         $tipo->fill($request->all());
         $tipo->save();
-        return redirect()->route('tipo.index')->whith('success','Cadastrado com Sucesso');
+        return redirect()->route('tipo.index')->with('success','Cadastrado com Sucesso');
     }
 
     /**

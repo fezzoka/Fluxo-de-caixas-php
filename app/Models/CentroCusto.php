@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 // models
-use app\models\{tipo};
+use App\Models\Tipo;
 
 class CentroCusto extends Model
 {
     use HasFactory,SoftDeletes;
 
-    protected $table = 'centro_custo';
+    protected $table = 'centro_custos';
     protected $primaryKey = 'id_centro_custo';
     protected $dates = ['created_at',
                          'update_at',
@@ -27,6 +27,6 @@ class CentroCusto extends Model
     // 19-09-2022
     public function tipo()
     {
-        return $this->belongsTo(tipo::class,'id_tipo','id_tipo');
+        return $this->belongsTo(Tipo::class,'id_tipo','id_tipo');
     }
 }
